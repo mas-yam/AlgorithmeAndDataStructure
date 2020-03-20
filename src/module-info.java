@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author masato
+ *
+ */
+module AlgorithmeAndDataStructure {
+}
