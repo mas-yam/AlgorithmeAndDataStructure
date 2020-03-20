@@ -28,6 +28,8 @@ public class InsertionSort {
 	static int[] ascendingSort(int[] array) {
 
 		int[] newArray = Arrays.copyOf(array, array.length);
+
+		// ソート前の順序を表示
 		for (int k = 0; k < newArray.length; k++) {
 
 			if(k== newArray.length-1) {
@@ -37,6 +39,7 @@ public class InsertionSort {
 			}
 		}
 
+		// ソート
 		for (int i = 1; i < newArray.length; i++) {
 			int v = newArray[i];
 			int j = i -1;
@@ -45,6 +48,8 @@ public class InsertionSort {
 				j--;
 			}
 			newArray[j+1] = v;
+
+			// ソート後の順序を表示
 			for (int k = 0; k < newArray.length; k++) {
 
 				if(k== newArray.length-1) {
@@ -63,6 +68,8 @@ public class InsertionSort {
 	static int[] descendingSort(int[] array) {
 
 		int[] newArray = Arrays.copyOf(array, array.length);
+
+		// ソート前の順序を表示
 		for (int k = 0; k < newArray.length; k++) {
 
 			if(k== newArray.length-1) {
@@ -72,6 +79,7 @@ public class InsertionSort {
 			}
 		}
 
+		// ソート
 		for (int i = 0; i < newArray.length; i++) {
 			int v = newArray[i];
 			int j = i - 1;
@@ -80,6 +88,8 @@ public class InsertionSort {
 				j--;
 			}
 			newArray[j+1] = v;
+
+			// ソート後の順序を表示
 			for (int k = 0; k < newArray.length; k++) {
 
 				if(k== newArray.length-1) {
